@@ -111,7 +111,7 @@ def query_llama_stream(prompt, model="llama3:8b", temperature=0.7, use_web_searc
         yield error_text, None, True
 
 # Set page config
-st.set_page_config(page_title="ICICI Prudential Chatbot System", layout="wide")
+st.set_page_config(page_title="Chatbot System", layout="wide")
 
 # Initialize session state
 if 'history' not in st.session_state:
@@ -128,7 +128,7 @@ if 'use_web_search' not in st.session_state:
     st.session_state.use_web_search = False
 
 # Main content
-st.title("ICICI Prudential Chatbot System")
+st.title("Chatbot System")
 st.markdown("""
 This application uses LLama 3 (8B) through Ollama to answer your questions in a chat-like interface.
 It can also search the web for up-to-date information when needed.
@@ -172,7 +172,7 @@ with st.sidebar:
         st.metric("Average Response Time", f"{avg_time:.2f}s")
     
     st.markdown("---")
-    st.markdown("© 2025 ICICI Prudential LLM Q&A System")
+    st.markdown("© 2025 LLM Q&A System")
 
 # Display chat history
 chat_container = st.container()
