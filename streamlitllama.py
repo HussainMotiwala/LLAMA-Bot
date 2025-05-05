@@ -43,7 +43,7 @@ def query_llama(prompt, model="llama3:8b", temperature=0.7):
 st.set_page_config(page_title="LLM Q&A Application", layout="wide")
 
 # Main content
-st.title("ICICI Prudential Question-Answering System")
+st.title("Question-Answering System")
 st.markdown("""
 This application uses LLama 3 (8B) through Ollama to answer your questions.
 """)
@@ -104,4 +104,4 @@ if st.session_state.history:
 
 # Footer
 st.markdown("---")
-st.markdown("© 2025 ICICI Prudential LLM Q&A System")
+st.markdown("© 2025 LLM Q&A System")
